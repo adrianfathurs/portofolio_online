@@ -30,4 +30,4 @@ jobs:
           git config user.name "adrianfathurs"
           git config user.email "fatursetiawan80@gmail.com"
           git pull origin main
-          git push origin gh-pages
+          git push -u origin gh-pages
