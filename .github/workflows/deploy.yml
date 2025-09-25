@@ -30,4 +30,4 @@ jobs:
           git checkout gh-pages || git checkout -b gh-pages
           git config user.name "adrianfathurs"
           git config user.email "fatursetiawan80@gmail.com"
-          git push -u origin gh-pages
+          git push --force origin gh-pages
