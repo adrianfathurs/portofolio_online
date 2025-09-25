@@ -26,8 +26,8 @@ jobs:
 
       - name: Deploy to gh-pages branch
         run: |
+          cd out
           git checkout gh-pages || git checkout -b gh-pages
           git config user.name "adrianfathurs"
           git config user.email "fatursetiawan80@gmail.com"
-          git pull origin main
           git push -u origin gh-pages
