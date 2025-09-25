@@ -26,13 +26,8 @@ jobs:
 
       - name: Deploy to gh-pages branch
         run: |
-          # init repo untuk branch gh-pages
-          rm -rf docs
-          mv out docs
-          cd out
           git init
           git config user.name "adrianfathurs"
           git config user.email "fatursetiawan80@gmail.com"
           git add .
           git commit -m "Deploy from GitHub Actions"
-          git push
