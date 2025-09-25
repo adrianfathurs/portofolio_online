@@ -2,7 +2,7 @@
   "name": "portofolio_online",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adrianfathurs.github.io/portofolio_online",
+  "homepage": "https://adrianfathurs.github.io/portofolio_online/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
