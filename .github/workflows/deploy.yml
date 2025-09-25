@@ -24,11 +24,6 @@ jobs:
       - name: Build & Export Next.js (static export)
         run:  npm run build
 
-      - name: Prepare docs folder for GitHub Pages
-        run: |
-          rm -rf docs
-          mv out docs
-
       - name: Commit docs folder
         run: |
           git add .
