@@ -24,10 +24,13 @@ jobs:
       - name: Build & Export Next.js (static export)
         run:  npm run build
 
-      - name: Deploy to gh-pages branch
+      - name: Prepare docs folder for GitHub Pages
         run: |
-          git config user.name "adrianfathurs"
-          git config user.email "fatursetiawan80@gmail.com"
+          rm -rf docs
+          mv out docs
+
+      - name: Commit docs folder
+        run: |
           git add .
           git commit -m "Deploy from GitHub Actions"
-          git push
+          git push origin main
