@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen bg-softDark text-gray-200 px-6">
       <Navbar />
       <Banner />
-      <Projects />
+      <Projects  />
     </div>
   );
 }
